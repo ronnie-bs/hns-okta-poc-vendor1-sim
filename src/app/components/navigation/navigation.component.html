@@ -1,0 +1,17 @@
+<div class="navigator-outer">
+    <div class="entry" [ngClass]="{selected: activeSelection === 'home'}" (click)="navigateTo('home')">
+        Home
+    </div>
+    <div class="entry" [ngClass]="{selected: activeSelection === 'profile'}" (click)="navigateTo('profile')">
+        Profile
+    </div>
+    <div class="entry" [ngClass]="{selected: activeSelection === 'about'}" (click)="navigateTo('about')">
+        About
+    </div>
+    <div class="entry" [ngClass]="{selected: activeSelection === 'heidrick'}" (click)="navigateTo('heidrick')">
+        Heidrick Platform
+    </div>
+    <div class="entry" [ngClass]="{selected: activeSelection === 'logout'}" (click)="navigateTo('logout')">
+        Logout
+    </div>
+</div>

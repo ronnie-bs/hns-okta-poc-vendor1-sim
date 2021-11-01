@@ -1,0 +1,20 @@
+.navigator-outer {
+    display: flex;
+    border: solid 1px purple;
+}
+
+.navigator-outer .entry {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: purple;
+    padding: 20px 30px;
+}
+
+.navigator-outer .entry:hover {
+    background-color: yellowgreen;
+}
+
+.navigator-outer .entry.selected {
+    background-color: green;
+}
