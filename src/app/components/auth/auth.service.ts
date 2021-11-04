@@ -36,7 +36,9 @@ export class AuthService {
     }
 
     public isStatesMatch(state: string): boolean {
-        return this.state === state;
+        const thisState = this.state || "";
+        const argState = state || "";
+        return thisState !== "" && argState !== "" && thisState === argState;
     }
 
     public async redirectToAuthUrl() {
